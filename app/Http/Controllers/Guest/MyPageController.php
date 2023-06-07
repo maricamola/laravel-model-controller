@@ -14,10 +14,24 @@ class MyPageController extends Controller
         return view('home');
     }
 
+
+
+
     public function movies(){
 
         $movies = Movie::all();
 
         return view('movies' , compact('movies'));
+    }
+
+
+
+
+    public function movie_detail($slug){
+
+        $movie = Movie::where('slug' , $slug)->first();
+
+
+        return view('movie_detail' , compact('movie'));
     }
 }

@@ -11,13 +11,15 @@
     <div class="container">
         <h1>La mia lista</h1>
 
-        <table class="table table-dark table-hover">
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th scope="col">#ID</th>
                     <th scope="col">Titolo</th>
                     <th scope="col">Data</th>
                     <th scope="col">Voto</th>
+                    <th scope="col">View</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -28,6 +30,10 @@
                             <td>{{ $movie->title }}</td>
                             <td>{{ $movie->date }}</td>
                             <td>{{ $movie->vote }}</td>
+                            <td>
+                                <a href="{{ route('movie_detail' , ['slug' => $movie->slug]) }}" class="btn btn-dark">Vai alla copertina</a>
+                            </td>
+
                     </tr>
 
                 @endforeach

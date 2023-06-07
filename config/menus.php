@@ -11,8 +11,8 @@ return [
             'href'=> 'Serie Tv'
         ],
         [
-            'text'=> 'Film',
-            'href'=> 'Film'
+            'text'=> 'Movies',
+            'href'=> 'Movies'
         ],
         [
             'text'=> 'Nuovi e popolari',

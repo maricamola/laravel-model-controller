@@ -1,5 +1,5 @@
 <footer>
     <div class="container text-center">
-        Boolflix By Marica
+        Boolflix By Marica &#128512;
     </div>
 </footer>
