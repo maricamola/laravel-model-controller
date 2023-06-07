@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Il path rimane ('/')
-Route::get('/', [MyPageController::class, "index"]) ->name('home');
+Route::get('/home', [MyPageController::class, "home"]) ->name('home');
 
 //pagina del dettaglio
 Route::get('/film/{slug}', [MyPageController::class, "movie_detail"]) ->name('movie_detail');

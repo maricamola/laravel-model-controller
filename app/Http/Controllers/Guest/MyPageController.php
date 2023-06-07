@@ -10,7 +10,7 @@ use function GuzzleHttp\Promise\all;
 
 class MyPageController extends Controller
 {
-    public function index(){
+    public function home(){
         return view('home');
     }
 

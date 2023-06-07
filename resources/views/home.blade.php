@@ -9,7 +9,7 @@
 <main>
 
     <div class="container">
-        <h1>La mia lista</h1>
+        <h1>Cerca una Serie Tv ...</h1>
     </div>
 
 </main>
