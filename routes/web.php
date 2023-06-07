@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 // Il path rimane ('/')
 Route::get('/', [MyPageController::class, "index"]) ->name('home');
+
+Route::get('/la-mia-lista', [MyPageController::class, "movies"]) ->name('movies');
