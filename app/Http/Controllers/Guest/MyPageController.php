@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
-use App\Models\movies;
+use App\Models\Movie;
 use Illuminate\Http\Request;
+
+use function GuzzleHttp\Promise\all;
 
 class MyPageController extends Controller
 {
@@ -13,13 +15,9 @@ class MyPageController extends Controller
     }
 
     public function movies(){
-        return view('movies');
+
+        $movies = Movie::all();
+
+        return view('movies' , compact('movies'));
     }
-
-//     public function movies(){
-// // con il metodo all salviamo nella variabile tutti i dati della tabella
-//         $movies = movies::all();
-
-//         return view('movies' , compact('movies'));
-//     }
 }
