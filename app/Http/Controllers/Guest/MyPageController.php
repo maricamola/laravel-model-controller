@@ -10,11 +10,9 @@ use function GuzzleHttp\Promise\all;
 
 class MyPageController extends Controller
 {
-    public function home(){
+    public function index(){
         return view('home');
     }
-
-
 
 
     public function movies(){
@@ -25,12 +23,9 @@ class MyPageController extends Controller
     }
 
 
-
-
     public function movie_detail($slug){
 
         $movie = Movie::where('slug' , $slug)->first();
-
 
         return view('movie_detail' , compact('movie'));
     }
